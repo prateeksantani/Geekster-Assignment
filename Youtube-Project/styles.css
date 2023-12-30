@@ -1,0 +1,147 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar{
+  /* background-color: yellow; */
+  height: 60px;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sidebar{
+  /* background-color: orange; */
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 60px;
+  
+}
+
+.area{
+  /* background-color: blue; */
+  width: calc(100% - 250px);
+  height: 900px;
+  margin-left: 250px;
+  margin-top: 60px;
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+  padding: 24px;
+}
+
+.video{
+  height: 200px;
+  width: 18%;
+  /* background-color: aqua; */
+}
+
+.channelinfo{
+  display: flex;
+  column-gap: 16px;
+  align-items: flex-start;
+  margin-top: 4px;
+}
+
+#title{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+  text-transform: capitalize;
+}
+
+#channelname{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-bottom: 4px;
+  color: grey;
+}
+
+#views{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: grey;
+  font-size: 12px;
+}
+
+#logo{
+  border-radius: 50%;
+}
+
+#thumbnail{
+  border-radius: 12px;
+}
+
+#sidebutton{
+  display: flex;
+  justify-content:left;
+  align-items:center;
+  margin-top: 10px;
+  margin-left: 25px;
+  width: 100%;
+  column-gap: 16px;
+  font-size: 16px;border: none;
+  background-color: transparent;
+  padding: 6px;
+}
+
+.menu-logo{
+  display: flex;
+  align-items: center;
+  margin-left: 2%;
+}
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 15px;
+}
+
+
+.header_left img{
+    width: 50px;
+    margin-left: 10px;
+}
+
+.header_left i{
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.header_search form{
+    border: 1px solid #ddd;
+    height: 35px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.header_search input{
+    width: 500px;
+    padding: 10px;
+    margin: 0;
+    height: 100%;
+    border: none;
+    border-radius: 0;
+}
+
+.header_search button{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    border: none;
+    border-radius: 0;
+    /* width: 50px; */
+}
+
+.top-right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  margin-right: 2%
+}
