@@ -1,3 +1,17 @@
-h1{
-  color: bisque;
+div:hover p {
+  display: none;
+}
+
+p{
+  display: block;
+  color: black;
+  padding: 20px;
+}
+
+
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 10px;
+  column-gap: 10px;
 }
