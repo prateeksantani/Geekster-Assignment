@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="my-container"></div>
+  <button id="clickButton">Click Me</button>
+
+  <script>
+  const container = document.getElementById("my-container");
+  const button = document.getElementById("clickButton");
+
+  button.addEventListener("click", () => {
+      const el = document.createElement("h1");
+      el.innerText = "Prateek";
+      container.appendChild(el);
+  });
+
+  const add = (a) => (b) => (c) => a + b + c;
+  console.log(add(1)(2)(3));
+
+  // function sendAutoEmail(to){
+  //   return function(subject){
+  //     return function(body){
+  //       consol.log(`Sending Email to ${to} with subject ${subject}: ${body}`);
+  //     }
+  //   }
+  // }
+
+const sendAutoEmail = (to) => (subject) => (body) =>
+`Sending Email to ${to} with subject ${subject}: ${body}`;                  //currying until all threee arguments are not passed function wont execute
+
+  let step1 = sendAutoEmail('prateeksantani98@gmail.com');
+  let step2 = step1("New Order Confirmation");
+
+ console.log( step2("Hep Prateek,here is something for you"));
+
+  </script>
+</body>
+</html>
