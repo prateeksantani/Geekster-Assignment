@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="my-container"></div>
+  <button id="clickButton">Click Me</button>
+
+
+  <script>
+  const button = document.getElementById("clickButton");
+
+  const container = document.getElementById("my-container")
+
+
+  // button.addEventListener("click", () => {
+  //   const element = document.createElement('h1');
+    
+  //   element.innerText = 'Prateek';
+  //   container.appendChild(element);
+  // })
+
+  let count = 1;
+
+button.addEventListener("click", () => {
+    const element = document.createElement('li');
+
+
+    element.innerText = `Prateek ${count}`;
+    container.appendChild(element);
+    count++;
+
+})
+
+  </script>
+</body>
+</html>
